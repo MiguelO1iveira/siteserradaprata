@@ -1,0 +1,151 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+
+/* ========== FORMATAÇÃO DO DOCUMENTO ========== */
+* {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;   
+}
+
+/* ============== PALETA DE CORES ============== */
+:root {
+    --cor01: rgb(243, 243, 243);
+    --cor02: gray;
+    --cor03: rgb(190, 190, 190);
+}
+
+/* =================== BODY ==================== */
+body {
+    background-color: var(--cor01);
+    min-height: 100vh;
+}
+body p {
+    font-size: clamp(18px, 2vw, 21px);
+    
+}
+body h1 {
+    font-size: clamp(21px, 2.7vw, 36px);
+}
+
+/* ================== HEADER =================== */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor01);
+    padding: 1.8%;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+header > a.linkLogo {
+    width: 27%;
+    text-align: center;
+}
+header > a > picture > img.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* ==================== MAIN ==================== */
+main {
+    width: 100%;   
+}
+
+/* Imagem principal */
+main > picture > img.bannerP  { 
+    width: 100%;
+    margin-top: 5%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.178);
+}
+
+/* Título principal */
+main > article.conteudoTexto >  h1.tituloPrincipal {
+    letter-spacing: 1.5px;
+    padding: 10px;
+    color: var(--cor02);
+    text-align: center;
+    
+}
+
+/* Articles que possuem texto... */
+main > article.conteudoTexto {
+    width: 70%;
+    text-align: justify;
+    margin: 0% auto;
+    text-indent: 5%;
+}
+
+/* Texto de apresentação do KLAR */
+main > article.conteudoTexto > p.textoAbertura {
+    margin-top: 20px;
+}
+
+/* Article do fale conosco */
+main > article.faleConosco {
+    text-align: center;
+}
+
+/* Article do Site em Construção */ 
+main > article.articleAviso {
+   display: flex;
+   align-items: center;
+}
+
+/* Texto do article site em construçao */
+main > article.articleAviso > h2.aviso {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: linear-gradient(to right, transparent, rgb(185, 185, 185), transparent);
+    
+}
+/* Icone do site em construção */
+main img.iconeConstruction {
+    margin-right: 1%;
+}
+
+/* Titúlo fale conosco */
+main > article.faleConosco > h1.tituloFaleConosco {
+    font-size: clamp(21px, 2vw, 36px);
+}
+/* =================== FOOTER ================== */
+footer {
+    font-size: clamp(8px, 0.3vw, 36px);
+    height: 10%;
+    background-color: var(--cor03);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+/* =============== RESPONSIVIDADE ============== */
+@media (max-width: 700px) {
+    header {
+        height: 4%;
+    }
+    header > a.linkLogo {
+        width: 35%;
+        text-align: center;
+    }
+    main > article.conteudoTexto {
+        width: 85%;
+    
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 7%;
+    }
+    header > a.linkLogo {
+        width: 70%;
+        text-align: center;
+    }
+}
+/* ============================================= */
