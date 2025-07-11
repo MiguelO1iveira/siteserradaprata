@@ -62,7 +62,7 @@ main > picture > img.bannerP  {
 }
 
 /* Título principal */
-main > article.conteudoTexto >  h1.tituloPrincipal {
+main > section.conteudoTexto >  h1.tituloPrincipal {
     letter-spacing: 1.5px;
     padding: 10px;
     color: var(--cor02);
@@ -71,7 +71,7 @@ main > article.conteudoTexto >  h1.tituloPrincipal {
 }
 
 /* Articles que possuem texto... */
-main > article.conteudoTexto {
+main > section.conteudoTexto {
     width: 70%;
     text-align: justify;
     margin: 0% auto;
@@ -79,24 +79,24 @@ main > article.conteudoTexto {
 }
 
 /* Texto de apresentação do KLAR */
-main > article.conteudoTexto > p.textoAbertura {
+main > section.conteudoTexto > p.textoAbertura {
     margin-top: 20px;
     
 }
 
 /* Article do fale conosco */
-main > article.faleConosco {
+main > section.faleConosco {
     text-align: center;
 }
 
 /* Article do Site em Construção */ 
-main > article.articleAviso {
+main > section.sectionAviso {
    display: flex;
    align-items: center;
 }
 
 /* Texto do article site em construçao */
-main > article.articleAviso > h2.aviso {
+main > section.sectionAviso > h2.aviso {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +110,7 @@ main img.iconeConstruction {
 }
 
 /* Titúlo fale conosco */
-main > article.faleConosco > h1.tituloFaleConosco {
+main > section.faleConosco > h1.tituloFaleConosco {
     font-size: clamp(21px, 2vw, 36px);
 }
 /* =================== FOOTER ================== */
@@ -134,13 +134,13 @@ footer {
         width: 35%;
         text-align: center;
     }
-    main > article.conteudoTexto {
+    main > section.conteudoTexto {
         width: 85%;
     
     }
 }
 @media (max-width: 600px) {
-    main > article.conteudoTexto > p { 
+    main > section.conteudoTexto > p { 
         width: 100%;
     }
     main > article.conteudoTexto { 
