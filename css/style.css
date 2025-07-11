@@ -21,7 +21,7 @@ body {
     min-height: 100vh;
 }
 body p {
-    font-size: clamp(18px, 2vw, 21px);
+    font-size: clamp(18px, 1.7vw, 21px);
     line-height: 1.3;
 }
 body h1 {
@@ -60,6 +60,14 @@ main > picture > img.bannerP  {
     margin-top: 5%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.178);
 }
+/* Imagem no parágrafo */
+main > section.conteudoTexto > picture > img.imagemTexto {
+    width: 70%;
+}
+
+main > section.conteudoTexto {
+    
+}  
 
 /* Título principal */
 main > section.conteudoTexto >  h1.tituloPrincipal {
@@ -67,15 +75,13 @@ main > section.conteudoTexto >  h1.tituloPrincipal {
     padding: 10px;
     color: var(--cor02);
     text-align: center;
-    
 }
 
-/* Articles que possuem texto... */
-main > section.conteudoTexto {
+/* Sections que possuem texto... */
+main > section.conteudoTexto  {
     width: 70%;
-    text-align: justify;
     margin: 0% auto;
-    text-indent: 5%;
+    text-align: center;
 }
 
 /* Texto de apresentação do KLAR */
@@ -83,13 +89,19 @@ main > section.conteudoTexto > p.textoAbertura {
     margin-top: 20px;
     
 }
+/* Parágrafos que estão dentro da section.conteudoTexto */
+main > section.conteudoTexto p {
+    text-align: justify;
+    text-indent: 5%;
+}
 
-/* Article do fale conosco */
+
+/* Section do fale conosco */
 main > section.faleConosco {
     text-align: center;
 }
 
-/* Article do Site em Construção */ 
+/* Section do Site em Construção */ 
 main > section.sectionAviso {
    display: flex;
    align-items: center;
