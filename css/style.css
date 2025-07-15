@@ -10,10 +10,12 @@
 
 /* ============== PALETA DE CORES ============== */
 :root {
-    --cor01: rgb(243, 243, 243);
+    /*--cor01: rgb(243, 243, 243);*/
+    --cor00: black;
+    --cor01: rgb(255, 255, 255);
     --cor02: gray;
     --cor03: rgb(190, 190, 190);
-    --cor04: #005EAC;
+    --cor04: rgb(0, 94, 172);
 }
 
 /* =================== BODY ==================== */
@@ -36,12 +38,12 @@ header {
     justify-content: center;
     align-items: center;
     background-color: var(--cor01);
-    padding: 1.8%;
+    padding: 1.3%;
     width: 100%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 header > a.linkLogo {
-    width: 27%;
+    width: 10%;
     text-align: center;
 }
 header > a > picture > img.logo {
@@ -132,8 +134,8 @@ main > section.faleConosco > h1.tituloFaleConosco {
 footer {
     font-size: clamp(8px, 0.3vw, 36px);
     height: 10%;
-    background-color: var(--cor04);
-    color: var(--cor01);
+    background-color: var(--cor03);
+    color: var(--cor00);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +149,7 @@ footer {
         height: 4%;
     }
     header > a.linkLogo {
-        width: 35%;
+        width: 13%;
         text-align: center;
     }
     main > section.conteudoTexto {
@@ -169,7 +171,7 @@ footer {
         height: 7%;
     }
     header > a.linkLogo {
-        width: 70%;
+        width: 25%;
         text-align: center;
     }
 }
