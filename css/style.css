@@ -13,6 +13,7 @@
     --cor01: rgb(243, 243, 243);
     --cor02: gray;
     --cor03: rgb(190, 190, 190);
+    --cor04: #005EAC;
 }
 
 /* =================== BODY ==================== */
@@ -63,6 +64,7 @@ main > picture > img.bannerP  {
 /* Imagem no parágrafo */
 main > section.conteudoTexto > picture > img.imagemTexto {
     width: 70%;
+    margin: 5% 0px;
 }
 
 main > section.conteudoTexto {
@@ -84,7 +86,7 @@ main > section.conteudoTexto  {
     text-align: center;
 }
 
-/* Texto de apresentação do KLAR */
+/* Texto de apresentação do KLA */
 main > section.conteudoTexto > p.textoAbertura {
     margin-top: 20px;
     
@@ -93,6 +95,7 @@ main > section.conteudoTexto > p.textoAbertura {
 main > section.conteudoTexto p {
     text-align: justify;
     text-indent: 5%;
+    margin: 0px;
 }
 
 
@@ -129,7 +132,8 @@ main > section.faleConosco > h1.tituloFaleConosco {
 footer {
     font-size: clamp(8px, 0.3vw, 36px);
     height: 10%;
-    background-color: var(--cor03);
+    background-color: var(--cor04);
+    color: var(--cor01);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,3 +174,5 @@ footer {
     }
 }
 /* ============================================= */
+
+/* TESTES */
